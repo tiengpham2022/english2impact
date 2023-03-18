@@ -1,0 +1,1542 @@
+/* main-color #343a40 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+p {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: #333;
+  background: #fdf6eeb2;
+}
+
+a,
+ul li {
+  text-decoration: none;
+}
+
+/* menu drop */
+.dropbtn {
+  padding: 10px 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+.header-logo {
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* end menu drop */
+
+/*------------------ RESPONSIVE -----------------------*/
+/*------------------ RESPONSIVE -----------------------*/
+/* Tablet and under */
+@media (min-width: 900px) {
+  #toggle {
+    display: none;
+  }
+}
+
+/* Tablet and under */
+@media (max-width: 900px) {
+  .main-nav {
+    padding: 10px 0;
+  }
+  .header-logo {
+    flex-direction: column;
+  }
+  #toggle {
+    display: none;
+    cursor: pointer;
+  }
+  #hero-title-mobile {
+    font-size: 40px;
+  }
+  #article-mobile {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .article {
+  }
+  #side-bar-mobile {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* contact-mobile */
+  .contact-areas {
+    flex-direction: column;
+  }
+  #contact-area-forms-mobile,
+  #contact-area-col2-mobile {
+    width: 90%;
+    padding-left: 40px;
+  }
+  #contact-area-col2-mobile {
+    padding-bottom: 20px;
+  }
+  #contact-title-mobile {
+    font-size: 32px;
+
+    padding: 0;
+  }
+  .grammar-contents {
+    width: 90%;
+  }
+  .grammar-menu {
+    display: none;
+  }
+  .grammar-contents {
+    width: 100% !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  #contact-mobile {
+    display: none;
+  }
+  #social-mobile {
+    justify-content: center;
+  }
+  .main-nav {
+    display: none;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #toggle {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    width: 100vw;
+    color: #fff;
+    background-color: #063f49;
+    justify-content: center;
+  }
+
+  /* h2 banner cho chữ nhỏ lại */
+  #hero-title-mobile {
+    font-size: 32px;
+  }
+  #footer-mobile {
+    flex-direction: column;
+    gap: 0;
+  }
+  #footer-mobile1,
+  #footer-mobile2,
+  #footer-mobile3 {
+    width: 90%;
+    padding-bottom: 0;
+  }
+  .courses-toeic p {
+    font-size: 18px !important;
+  }
+}
+.side-bar {
+  width: 90%;
+}
+
+/* contact-mobile */
+
+/* mobile <450 */
+@media (max-width: 450px) {
+  #hero-title-mobile {
+    font-size: 25px;
+  }
+}
+/*------------------END  RESPONSIVE -----------------------*/
+/*------------------END  RESPONSIVE -----------------------*/
+
+/*----------------- Header top ----------------------- */
+/*----------------- Header top ----------------------- */
+
+.header-contacts {
+  background-color: #063f49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  box-shadow: 0 0 20px 5px rgba(33, 33, 33, 0.227);
+}
+.header-contact,
+.header-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header-contact a:link,
+.header-contact a:visited,
+.header-social a:link,
+.header-social a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+.icon-header-left {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+  position: relative;
+  bottom: -5px;
+}
+
+.icon-header {
+  width: 20px;
+  height: 20px;
+  stroke: #e3fafc;
+  fill: #e3fafc;
+}
+
+/* ------------- LOGO - MENU  ---------------- */
+/* ------------- LOGO - MENU   ---------------- */
+
+.main-logo {
+  width: 180px;
+}
+/* .main-nav {
+  font-size: 18px;
+  padding: 12px 16px;
+  display: flex;
+} */
+/* .main-nav div::after {
+  content: "|";
+  height: 10px;
+  width: 1px;
+  color: #abadb0;
+} */
+
+.main-nav a:link,
+.main-nav a:visited {
+  color: #343a40;
+  padding: 10px 15px;
+}
+.main-nav a:hover,
+.main-nav a:active {
+  color: #343a40;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #d9480f;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 12px 16px;
+  display: flex;
+}
+
+/* -------------END LOGO - MENU  ---------------- */
+/* -------------END LOGO - MENU  ---------------- */
+
+/* -------------HOME - BANNER  ---------------- */
+/* -------------HOME - BANNER  ---------------- */
+
+.hero-section {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(104, 146, 149, 0.669),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(img/background1.jpg);
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(33, 33, 33, 0.44);
+  position: relative;
+}
+.hero-section--left {
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+.hero-title {
+  font-size: 44px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.hero-caption {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: #d9480f;
+  color: #fff;
+}
+
+.hero-section .btn:active,
+.hero-section .btn:hover {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: #fd7e14;
+  color: #fff;
+}
+/* -------------END --- HOME - BANNER  ---------------- */
+/* -------------END --- HOME - BANNER  ---------------- */
+
+/* PHAN CHIA BANG DAU 3 CHAM */
+.phanchia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+}
+
+.bacham {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #d9480f;
+  border-radius: 50%;
+}
+/* <!-- BODY MAIN --> */
+
+.saukhungs {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  flex-wrap: wrap;
+}
+
+.saukhung {
+  border-radius: 30px 0 30px 0;
+  display: inline-block;
+  background-color: #eaeaea;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.222);
+}
+.saukhung .btn {
+  color: #fff;
+  background-color: #063f49;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.saukhung-image-1 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Pronunciation.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-image-2 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Grammar.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-image-3 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Speaking.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-image-4 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Reading.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-image-5 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Writing.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-image-6 {
+  border-radius: 30px 0 0 0;
+  background-image: url(img/Home/Toeic.jpg);
+  background-size: cover;
+  height: 50%;
+}
+.saukhung-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.saukhung-content-nho {
+  padding-bottom: 35px;
+  color: #757575;
+}
+.saukhung-content h2 {
+  padding-bottom: 10px;
+  color: #4f4f4f;
+}
+
+/* ------------------- END 6 KHUNG --------------- */
+
+/* --------------------BO CUC THU 3 -------------- */
+
+.article {
+  background-color: #74b816;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.main {
+  padding-right: 20px;
+  height: 350px;
+  border-radius: 80px 0 80px 0;
+  border-style: outset;
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  box-shadow: 0 10px 20px rgba(122, 122, 122, 0.222);
+}
+
+.main-title {
+  font-size: 28px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-title h2 {
+  color: #495057;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.main-title h2::after {
+  content: "";
+  display: inline-block;
+  background-color: #868e96;
+  width: 1px;
+  height: 150px;
+  color: #868e96;
+  position: absolute;
+  top: 8%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
+.main-content {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-content p {
+  color: #495057;
+  padding: 10px 0;
+  line-height: 1.4;
+}
+
+.side-bar {
+  display: inline-block;
+  width: 60%;
+  height: auto;
+}
+.video-gioithieu {
+  width: 95%;
+}
+.tags {
+}
+.tags .tag {
+  display: inline-block;
+  padding: 10px 2px;
+}
+.tags h2 {
+  color: #343434;
+  padding-top: 30px;
+}
+.tags .tag p {
+  padding: 10px 20px;
+  background-color: #063f49;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(67, 67, 67, 0.329);
+}
+.tags .tag a:link,
+.tags .tag a:visited {
+  color: #fff;
+  font-weight: 350;
+}
+
+footer {
+  background-color: #063f49;
+  text-align: justify;
+}
+
+.col-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.col-footer1,
+.col-footer2,
+.col-footer3 {
+  width: 30%;
+  color: #fff;
+  padding-left: 30px;
+}
+.tag {
+  padding: 5px 0;
+}
+
+/* .col-footer a:link,
+.col-footer a:visited {
+  color: #343a40;
+  background-color: #f8f9fa;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 8px;
+}
+.col-footer a:hover,
+.col-footer a:active {
+  color: #fff;
+  background-color: #d9480f;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+} */
+.col-footer a:link,
+.col-footer a:visited {
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+}
+
+.col-footer1 h2,
+.col-footer2 h2,
+.col-footer3 h2 {
+  color: #fd7e14;
+  padding: 20px 0 5px 0;
+  font-size: 18px;
+  display: block;
+}
+
+.copyright p {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 20px;
+  text-align: center;
+  color: #f8f9fa;
+  border-top: 2px solid #868e96;
+}
+.copyright a:link,
+.copyright a:visited {
+  font-size: 14px;
+  color: #51cf66;
+}
+
+/* -------------END FOOTER ---------------- */
+/* -------------END FOOTER ---------------- */
+
+/* -------------CONTACT  ---------------- */
+/* -------------CONTACT  ---------------- */
+
+.contact-areas {
+  padding-top: 60px;
+}
+
+.contact-section {
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(
+      rgba(131, 149, 104, 0.669),
+      rgba(0, 0, 0, 0.684)
+    ),
+    url(img/contact2.jpg);
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(33, 33, 33, 0.44);
+  position: relative;
+}
+.contact-section--left {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(60%, -50%);
+}
+.contact-title {
+  font-size: 44px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.contact-section .btn:active,
+.contact-section .btn:hover {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: #fd7e14;
+  color: #fff;
+}
+
+.contact-areas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-area-forms {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.contact-area-col2 {
+  width: 40%;
+}
+
+.contact-form-title {
+  padding-bottom: 20px;
+}
+
+.contact-form-title h2 {
+  font-size: 28px;
+  color: #343a40;
+}
+.contact-form-title h5 {
+  font-size: 16px;
+  color: #343a40;
+}
+.contact-form-container {
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-input {
+}
+
+.form-control1 {
+  width: 80%;
+  height: 30px;
+  padding-left: 20px;
+  padding-top: 1px;
+}
+.form-control2 {
+  padding: 20px;
+  width: 80%;
+  height: 100px;
+}
+
+.form-control3 {
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-item h5 {
+  font-size: 18px;
+  color: #495057;
+}
+.contact-item p,
+.contact-item a {
+  font-size: 16px;
+  color: #495057;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.contact-item h6 {
+  font-size: 18px;
+  color: #495057;
+}
+.contact-btn-submit {
+  width: auto;
+  padding: 10px 20px;
+  border: 1px solid #00616e;
+  background: #00616e;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.462);
+}
+
+.contact-class-info {
+  padding: 0 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-class-info-img,
+.contact-class-info-maps {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+}
+
+@media (max-width: 600px) {
+  .contact-class-info {
+    grid-template-columns: 1fr;
+    padding: 40px 40px;
+  }
+  .contact-class-info-maps {
+    height: 300px;
+  }
+}
+/* contact-success page */
+.contact-success {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 300px;
+}
+.contact-success h1 {
+  padding-bottom: 30px;
+  line-height: 1.4;
+}
+.btn-home a:link,
+.btn-home a:visited {
+  padding: 10px 20px;
+  background-color: #d9480f;
+  border-radius: 10px;
+  color: #fff;
+}
+.btn-home a:hover,
+.btn-home a:active {
+  background-color: #f85211;
+}
+
+/* -------------END   CONTACT  ---------------- */
+/* -------------END   CONTACT  ---------------- */
+/* -------------END   ghidanh  ---------------- */
+/* -------------END   Ghidanh  ---------------- */
+
+.ghidanh-form {
+  background-image: linear-gradient(to right, #d8d8d8, #3c557f);
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* -------------END   Ghidanh  ---------------- */
+/* -------------END   Ghidanh  ---------------- */
+/* --------------TOEIC------------------------- */
+/* --------------TOEIC------------------------- */
+
+/* toeic home */
+.color {
+  color: #0037ff;
+}
+.toeic-container {
+  padding-bottom: 20px;
+}
+
+.toeic-header {
+  padding: 20px;
+}
+.toeic-accordion {
+  font-size: 22px;
+  color: #087f5b;
+  line-height: 1.6;
+  margin-top: 15px;
+  padding: 20px 30px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.toeic-active,
+.toeic-accordion:hover {
+}
+
+.toeic-accordion:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.toeic-active:after {
+  content: "\2212";
+}
+
+.toeic-panel {
+  text-align: center;
+  padding: 0 40px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.img-reference {
+  max-width: 600px;
+  height: auto;
+  margin: 30px 0 10px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.218);
+}
+.toeic-panel p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px 0;
+  line-height: 1.7;
+
+  color: #4f4f4f;
+}
+
+.btn-toeic-test {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.btn-toeic-test a:visited,
+.btn-toeic-test a:link {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #d9480f;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.433);
+}
+.btn-toeic-test a p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* end toeic home */
+
+.toeic-tests {
+  padding: 30px 5px 30px 5px;
+}
+
+.toeic-tests h1 {
+  padding-left: 20px;
+}
+
+.toeic-mp3 {
+  padding-bottom: 10px;
+}
+.toeic-resume {
+  width: 100%;
+  padding-left: 10px;
+
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+}
+.toeic-score {
+  border: 4px solid #e8590c;
+  border-radius: 0 25px 0 25px;
+}
+.toeic-btn {
+  padding: 10px 0 30px 0;
+  line-height: 1.2;
+}
+
+.toeic-btn--1 {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #e8590c;
+  border: 1px solid #ad643d;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.311);
+}
+.toeic-btn--1:hover {
+  cursor: pointer;
+}
+.toeic-resume-right {
+  border: 4px solid #d9480f;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px 0;
+}
+
+.toeic-resume-right h1 {
+  padding: 20px 20px 0 20px;
+  align-content: center;
+}
+.toeic-menu {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.toeic-menu a {
+  color: #343a40;
+  padding: 20px 30px;
+  display: inline-block;
+  width: 250px;
+}
+.toeic-menu a:hover {
+  color: #fff;
+  background: #343434;
+  transition-duration: 0.3s;
+}
+.toeic-menu .active a {
+  background-color: #ff7e4b;
+}
+
+/* -------------------- ------------- TOEIC ------ TEST ---------------------*/
+.codinh {
+  position: fixed;
+  z-index: 3;
+  top: -4px;
+  right: 10px;
+}
+.mysidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mysidebar a {
+  padding: 8px 8px 18px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f1f3f5;
+  display: block;
+  transition: 0.3s;
+}
+
+.mysidebar a:hover {
+  color: #ff6b6b;
+}
+
+.mysidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #d9480f;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn a {
+  color: #d9480f;
+}
+
+.openbtn:hover {
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .mysidebar {
+    padding-top: 15px;
+  }
+  .mysidebar a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 670px) {
+  #main {
+    top: 40px;
+    right: 10px;
+  }
+}
+/* Style the tab */
+
+.khoangtrong {
+  padding-top: 50px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 50px 12px;
+  border-top: none;
+}
+
+/* cố định thanh menu */
+.toeic-menu-fix {
+  overflow: hidden;
+  /* background-color: #333; */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn {
+  display: none;
+}
+.modal-content h1 {
+  padding: 0;
+  margin: 0;
+}
+.modal-content p {
+  padding-left: 20px;
+  line-height: 2;
+}
+/* ------------END TOEIC ------ TEST ---------------------*/
+
+/* ---------reading - truyen doc ------------- */
+
+/* reading home */
+.reading-containers {
+  padding: 40px;
+}
+.reading-container {
+  padding-bottom: 20px;
+}
+
+.reading-header {
+  padding: 20px;
+}
+.reading-accordion {
+  font-size: 22px;
+  color: #087f5b;
+  line-height: 1.6;
+  margin-top: 15px;
+  padding: 20px 30px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.reading-active,
+.reading-accordion:hover {
+}
+
+.reading-accordion:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.reading-active:after {
+  content: "\2212";
+}
+
+.reading-panel {
+  padding: 0 40px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.reading-panel p,
+.reading-panel p a {
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px 0;
+  line-height: 1.7;
+
+  color: #4f4f4f;
+}
+
+.btn-reading-test {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.btn-reading-test a:visited,
+.btn-reading-test a:link {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #d9480f;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.433);
+}
+.btn-reading-test a p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.reading-imgage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* thanh điều hướng con */
+.reading-menu-phu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reading-menu-phu-item {
+  display: inline-block;
+  padding: 20px 0 0px 10px;
+}
+.reading-menu-phu-item a:link,
+.reading-menu-phu-item a:visited {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.reading-menu-phu-item a:hover,
+.reading-menu-phu-item a:active {
+  color: #ff922b;
+}
+
+/* reading content */
+.body-reading {
+  padding: 0 20px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/reading/bg-r);
+  background-size: cover; */
+  background-color: #343a40;
+}
+.reading-container {
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  border: 4px solid #ff7300;
+  background-color: #fdf6ee;
+  border-radius: 30px;
+}
+
+.reading-audio {
+}
+.reading-content {
+  padding-bottom: 10px;
+}
+.reading-content h2 {
+  color: #4f4f4f;
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 10px;
+}
+.reading-content p {
+  color: #4f4f4f;
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 10px;
+}
+.reading-vocabulary {
+  padding: 10px;
+}
+.reading-vocabulary h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.newword {
+  color: blue;
+}
+
+/* -----------------------grammar -------------------------*/
+.grammar-container {
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+}
+.grammar-contents {
+  width: 66%;
+}
+.grammar-menu {
+  width: 300px;
+}
+.grammar-title {
+  font-size: 28px;
+}
+.grammar-subtitle {
+  font-size: 24px;
+  color: #2aa3ea;
+  padding-top: 20px;
+  border-bottom: 8px groove #2aa3ea;
+}
+.grammar-content {
+  padding: 20px;
+}
+.grammar-content p {
+  text-align: justify;
+  color: #656565;
+  font-size: 22px;
+  line-height: 2;
+}
+.grammar-p2 {
+  padding-left: 25px;
+}
+
+.grammar-p3 {
+  background-color: #fdecd8;
+  margin: 20px 40px;
+  padding: 0 20px;
+  border: 4px solid #929fa7;
+}
+.grammar-p4 {
+  background-color: #fae9f9;
+  margin: 20px 40px;
+  padding: 0 20px;
+  border: 4px solid #929fa7;
+}
+.grammar-dang {
+  background-color: #2b8a3e;
+  padding: 5px 20px;
+  margin: 20px 10px;
+  color: #ffffff !important;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.grammar-menu-right {
+  padding: 15px 0;
+  background-color: #236173;
+  height: 760px;
+  border-radius: 8px;
+}
+.grammar-menu-item {
+  padding: 15px 20px;
+  border: 1px solid #788e9c;
+}
+.grammar-menu-item:hover {
+  background-color: #658087;
+}
+.grammar-menu-item a {
+  color: #fff;
+}
+.grammar-menu-itemcon {
+  padding: 10px 20px 10px 40px;
+}
+.menu-active a {
+  color: #000;
+}
+.menu-active {
+  background-color: #ccfdff;
+  border: 1px solid #7ea6c0;
+}
+.menu-active:hover {
+  background-color: #fdecd8;
+}
+
+/* ------------courses ---------- */
+/* ------courses-toeic-------- */
+
+.toeic-section,
+.grammar-section,
+.pronunciation-section,
+.speaking-section,
+.writing-section,
+.reading-section {
+  height: 100px;
+  width: 100%;
+
+  background-size: cover;
+  position: relative;
+}
+.toeic-section {
+  background-color: #2b8a3e;
+}
+.grammar-section {
+  background-color: #d6336c;
+}
+.pronunciation-section {
+  background-color: #0c8599;
+}
+.speaking-section {
+  background-color: #9c36b5;
+}
+.writing-section {
+  background-color: #6741d9;
+}
+.reading-section {
+  background-color: #099268;
+}
+.toeic-section .contact-title,
+.grammar-section .contact-title,
+.pronunciation-section .contact-title,
+.speaking-section .contact-title,
+.writing-section .contact-title,
+.reading-section .contact-title {
+  padding: 0;
+}
+.courses-toeics {
+  background-color: #ebfbee;
+  padding: 60px 30px;
+}
+.courses-grammars {
+  background-color: #fff0f6;
+  padding: 60px 30px;
+}
+.courses-pronunciations {
+  background-color: #e3fafc;
+  padding: 60px 30px;
+}
+.courses-speakings {
+  background-color: #f8f0fc;
+  padding: 60px 30px;
+}
+.courses-writings {
+  background-color: #f3f0ff;
+  padding: 60px 30px;
+}
+.courses-readings {
+  background-color: #e6fcf5;
+  padding: 60px 30px;
+}
+
+.courses-toeic {
+  max-width: 950px;
+  margin: 0px auto;
+  background-color: #fff4e6;
+
+  padding: 40px 30px 0 30px;
+  line-height: 1.8;
+
+  border: 3px solid #d9480f;
+  border-radius: 80px 0;
+}
+.toeic-section-title {
+  font-weight: bold;
+}
+.courses-toeic p {
+  font-size: 22px;
+  padding-top: 12px;
+  text-align: justify;
+}
+.courses-toeic-1 {
+  padding-left: 30px;
+}
+.courses-toeic-1 p {
+  padding-top: 0;
+}
+.toeic-btn {
+  padding-top: 20px;
+}
+.toeic-btn:hover {
+}
+.cover-class {
+  background-color: #66a80f;
+}
+
+/* Toeic ver2 */
+.toeic-container {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 600px auto;
+  column-gap: 10px;
+}
+.toeic-container-item1 {
+}
+.toeic-container-item2 {
+  padding: 60px 0 40px 0;
+}
+.toeic-title {
+  padding: 20px;
+  font-size: 32px;
+}
+.toeic-container-item3 {
+  padding: 0 10px;
+
+  grid-area: 2 / 2 / 3 / 3;
+}
+.toeic-container-item4 {
+  padding-bottom: 10px;
+  margin-top: 20px;
+  border: 3px solid #343a40;
+}
+.toeic-de,
+.toeic-dapan {
+  height: 500px;
+}
+.toeic-score {
+  width: 115%;
+}
+.tag-de {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tag-de a:link,
+.tag-de a:visited {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  color: #fff;
+
+  border-radius: 5px;
+}
+.tag-de a:nth-child(odd) {
+  background-color: #343a40;
+}
+.tag-de a:nth-child(even) {
+  background-color: #ced4da;
+  color: #333;
+}
+.toeic-other {
+  text-align: center;
+  padding: 5px;
+  background-color: #343a40;
+  color: #fff;
+}
