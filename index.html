@@ -14,7 +14,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicons/favicon-16x16.png"
+      href="favicons/favicon-16x16.png"
     />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
@@ -302,17 +302,48 @@
     </div>
     <!-- BODY MAIN -->
     <article id="article-mobile" class="article">
-      <main class="main">
-        <div class="main-title">
-          <h2>ENGLISH</h2>
+      <main class="game">
+        <div class="game-header">
+          <h1>Game 4000 Essential Words!</h1>
+          <form>
+            <select class="choose-cours" id="chooseCours">
+              <option selected disabled>Choose course</option>
+              <option value="bai1">Bài 1</option>
+              <option value="bai2">Bài 2</option>
+              <option value="bai3">Bài 3</option>
+              <option value="bai4">Bài 4</option>
+              <option value="bai5">Bài 5</option>
+              <option value="bai6">Bài 6</option>
+              <option value="bai7">Bài 7</option>
+            </select>
+          </form>
+          <button class="btn-game select">Send</button>
         </div>
-        <div class="main-content">
-          <p>
-            The most beautiful thing about learning is that no one takes that
-            away form you.
-          </p>
-          <p>Once you stop learning, you'll start dying.</p>
-          <p>Learning is the eye of the mind.</p>
+        <div class="game-body">
+          <div>
+            <div class="btn-games">
+              <button class="btn-game prevword">Prev Word!</button>
+              <button class="btn-game nextword">Next Word!</button>
+            </div>
+            <div class="game-question">
+              <div id="game-mp3" class="game-mp3">Listening and answer</div>
+              <div class="question">???</div>
+              <button class="btn-game hide">Hide</button>
+            </div>
+          </div>
+          <div class="game-main">
+            <section>
+              <input
+                type="text"
+                class="guess"
+                placeholder="điền đáp án vào đây"
+              />
+              <button class="btn-game check">Check!</button>
+            </section>
+            <section class="game-score">
+              <p class="message"></p>
+            </section>
+          </div>
         </div>
       </main>
       <aside id="side-bar-mobile" class="side-bar">
@@ -426,6 +457,7 @@
         });
       });
     </script>
+    <script src="vocabulary/script-game.js"></script>
 
     <!-----------------END JavaScript ------------->
     <!-----------------END JavaScript ------------->
