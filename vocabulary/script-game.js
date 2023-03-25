@@ -60,6 +60,8 @@ const dataWords = {
 let option;
 let question;
 document.querySelector('.select').addEventListener('click', function () {
+  document.querySelector('.ready').textContent =
+    'Bộ từ vựng của bạn đã sẵn sàng';
   option = document.getElementById('chooseCours').value;
   let minCrit = chooseCours.indexOf(option) * 20 + 0;
   let maxCrit = chooseCours.indexOf(option) * 20 + 20;
