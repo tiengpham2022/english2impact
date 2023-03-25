@@ -3,6 +3,10 @@
 /*
 
  */
+//data correct
+const correct = ['Correct!', 'Congratulation!', 'Exactly!', 'Perfect!'];
+const wrong = ['Wrong!', 'Sai rồi!', 'Làm lại đi!', 'Nghe lại đi!'];
+
 //data choose-cours
 const chooseCours = ['bai1', 'bai2', 'bai3'];
 
@@ -113,9 +117,12 @@ document.querySelector('.select').addEventListener('click', function () {
     if (!guess) {
       document.querySelector('.message').textContent = 'điền vào đi!';
     } else if (guess === question) {
-      document.querySelector('.message').textContent = 'Correct!';
+      //lấy ngẫu nhiên correct
+      let randomnumber = Math.trunc(Math.random() * correct.length);
+      document.querySelector('.message').textContent = correct[randomnumber];
     } else {
-      document.querySelector('.message').textContent = 'Wrong!';
+      let randomnumber = Math.trunc(Math.random() * wrong.length);
+      document.querySelector('.message').textContent = wrong[randomnumber];
     }
   });
   document.querySelector('.hide').addEventListener('click', function () {
