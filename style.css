@@ -107,8 +107,9 @@ ul li {
     font-size: 40px;
   }
   #article-mobile {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 30px;
   }
   .article {
   }
@@ -450,11 +451,12 @@ ul li {
 /* --------------------BO CUC THU 3 -------------- */
 
 .article {
-  background-color: #74b816;
-  width: 100vw;
+  background-color: #e9ecef;
+  width: 100%;
   margin: 0 auto;
   padding: 30px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(420px, 1fr));
   justify-content: center;
   gap: 40px;
 }
@@ -513,11 +515,11 @@ ul li {
 
 .side-bar {
   display: inline-block;
-  width: 60%;
+  max-width: 500px;
   height: auto;
 }
 .video-gioithieu {
-  width: 95%;
+  width: 100%;
 }
 .tags {
 }
@@ -1289,6 +1291,7 @@ footer {
   font-size: 30px;
   padding-bottom: 20px;
 }
+
 .newword {
   color: blue;
 }
@@ -1546,4 +1549,80 @@ footer {
 }
 .toeic-container-item2-reading {
   padding: 0;
+}
+
+/* 
+mini game
+*/
+
+/* LAYOUT */
+.game {
+  border: 3px solid #095a68;
+
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+}
+.game-header {
+  padding: 20px;
+  border-bottom: 3px solid #095a68;
+  background-color: #0b7285;
+  border-radius: 7px 7px 0 0;
+}
+.game-body {
+  padding: 20px;
+  background-color: #c5f6fa;
+  border-radius: 0 0 7px 7px;
+}
+
+.game-header h1 {
+  color: #fff;
+
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.btn-games {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-game {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.choose-cours {
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 18px;
+}
+.game-question {
+  padding: 20px 0;
+  background-color: #e3fafc;
+  border: 2px solid #095a68;
+  text-align: center;
+}
+.game-mp3 {
+  padding-bottom: 10px;
+}
+.question {
+  font-size: 22px;
+}
+.hide {
+  display: hide;
+}
+.game-main {
+  padding-top: 20px;
+}
+.guess {
+  padding: 10px 10px;
+  font-size: 18px;
+  width: 80%;
+}
+.message {
+  font-size: 26px;
+  padding-top: 20px;
+  color: #001350;
+}
+.select {
+  margin-top: 10px;
 }
