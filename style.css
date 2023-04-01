@@ -894,6 +894,14 @@ footer {
   font-size: 20px;
   font-weight: 300;
 }
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.btn.background-green {
+  background-color: green;
+}
 
 /* end toeic home */
 
