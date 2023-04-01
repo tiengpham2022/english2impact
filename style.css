@@ -375,7 +375,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 75px;
 
   flex-wrap: wrap;
 }
@@ -451,7 +451,7 @@ ul li {
 /* --------------------BO CUC THU 3 -------------- */
 
 .article {
-  background-color: #e9ecef;
+  background-color: #a5d8ff;
   width: 100%;
   margin: 0 auto;
   padding: 30px 20px;
@@ -515,11 +515,14 @@ ul li {
 
 .side-bar {
   display: inline-block;
-  max-width: 500px;
+  max-width: 540px;
   height: auto;
+  padding-right: 40px;
+  justify-self: flex-end;
 }
 .video-gioithieu {
   width: 100%;
+  box-shadow: 0px 9px 25px #7a7979;
 }
 .tags {
 }
@@ -1557,21 +1560,17 @@ mini game
 
 /* LAYOUT */
 .game {
-  border: 3px solid #095a68;
+  border: 3px solid #343a40;
 
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.247);
-  border-radius: 10px;
 }
 .game-header {
   padding: 20px;
-  border-bottom: 3px solid #095a68;
-  background-color: #0b7285;
-  border-radius: 7px 7px 0 0;
+  background-color: #343a40;
 }
 .game-body {
   padding: 20px;
-  background-color: #c5f6fa;
-  border-radius: 0 0 7px 7px;
+  background-color: #e9ecef;
 }
 
 .game-header h1 {
@@ -1579,6 +1578,11 @@ mini game
 
   font-size: 32px;
   padding-bottom: 10px;
+}
+.game-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .btn-games {
   padding: 20px 0;
@@ -1597,7 +1601,7 @@ mini game
 }
 .game-question {
   padding: 20px 0;
-  background-color: #e3fafc;
+  background-color: #ffc078;
   border: 2px solid #095a68;
   text-align: center;
 }
@@ -1624,5 +1628,4 @@ mini game
   color: #001350;
 }
 .select {
-  margin-top: 10px;
 }

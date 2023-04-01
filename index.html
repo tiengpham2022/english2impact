@@ -304,42 +304,44 @@
     <article id="article-mobile" class="article">
       <main class="game">
         <div class="game-header">
-          <h1>Game 4000 Essential Words!</h1>
-          <form>
-            <select class="choose-cours" id="chooseCours">
-              <option selected disabled>Choose course</option>
-              <option value="bai1">Bài 1</option>
-              <option value="bai2">Bài 2</option>
-              <option value="bai3">Bài 3</option>
-              <option value="bai4">Bài 4</option>
-              <option value="bai5">Bài 5</option>
-              <option value="bai6">Bài 6</option>
-              <option value="bai7">Bài 7</option>
-            </select>
-          </form>
-          <button class="btn-game select">Submit</button>
+          <h1>4000 Essential Words</h1>
+          <div class="game-row">
+            <form>
+              <select class="choose-cours" id="chooseCours">
+                <option selected disabled>Choose your story</option>
+                <option value="bai1">The real St. Nick</option>
+                <option value="bai2">The shepherd and the wild sheep</option>
+                <option value="bai3">The boy and his sled</option>
+                <option value="bai4">Tiny Tina</option>
+                <option value="bai5">Bài 5</option>
+                <option value="bai6">Bài 6</option>
+                <option value="bai7">Bài 7</option>
+              </select>
+            </form>
+            <button class="btn-game select">Confirm</button>
+          </div>
         </div>
         <div class="game-body">
           <div>
             <p class="ready"></p>
             <div class="btn-games">
-              <button class="btn-game prevword">Prev Word!</button>
-              <button class="btn-game nextword">Next Word!</button>
+              <button class="btn-game prevword">Previous</button>
+              <button class="btn-game nextword">Next</button>
             </div>
             <div class="game-question">
               <div id="game-mp3" class="game-mp3">
-                Click Next Word or Prev Word and Listening
+                Click Next or Previous to Listen
               </div>
               <div class="question">???</div>
-              <button class="btn-game hide">Hide</button>
+              <button class="btn-game hide">Show</button>
             </div>
           </div>
           <div class="game-main">
-            <section>
+            <section class="game-row">
               <input
                 type="text"
                 class="guess"
-                placeholder="điền đáp án vào đây"
+                placeholder="Typing what you hear..."
               />
               <button class="btn-game check">Check!</button>
             </section>
